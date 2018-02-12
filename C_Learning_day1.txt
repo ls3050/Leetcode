@@ -1,0 +1,23 @@
+一、day1
+1.学习项目的建立
+2.如果数组作为函数参数，数组退化为指针。
+  eg1:
+      void print_array( int a[1], int n);
+     =void print_array( int a[10], int n);
+     =void print_array( int a[], int n);
+     =void print_array( int *a, int n);
+3.数据类型（固定内存大小的别名）
+4.int b[10];
+  区分b与&b的区别
+  区分b+1与&b+1的区别
+  b：数组首元素的地址
+  &b：整个数组元素的地址
+5.指针类型长度
+  32bit————4
+  64bit————8
+6.typedef unsigned int u32;
+7.void 无类型
+  ①函数参数为空，定义函数时，可以用void修饰  eg2:  int fun(void)
+  ②函数无返回值。void fun(void)
+  ③不能定义void型的普通变量：void a;//无法确定类型
+   可以定义void *变量： void *p;//万能指针
